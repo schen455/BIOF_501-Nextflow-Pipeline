@@ -41,8 +41,9 @@ git clone https://github.com/schen455/BIOF_501-Nextflow-Pipeline.git
 ```
 2. Pull the raw methylation data from the NCBI GEO database (into the `/inputs` folder)
 ```bash
-cd BIOF_501-Nextflow-Pipeline/inputs
+cd BIOF_501-Nextflow-Pipeline/input
 ```
+Then
 ```bash
 curl -O https://ftp.ncbi.nlm.nih.gov/geo/series/GSE125nnn/GSE125367/suppl/GSE125367_RAW.tar
 ```
