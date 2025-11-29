@@ -23,7 +23,7 @@ This pipeline takes raw methylation .IDAT files from Illumina EPIC/EPICv2 array 
 ---
 Analyzing the human epigenome can reveal key factors and drivers of human health and disease. One integral component of epigenetic analysis is the investigation of methylation data. DNA methylation is the addition of methyl groups to nucleotides (most often cysteine), creating areas of methylation known as CpG sites. Gene methylation can lead to downstream regulatory effects on gene expression. Increased methylation (hypermethylation) has been associated with many diseases
 
-Nicolaides-Baraister syndrome (NCBRS)
+Nicolaides-Baraister syndrome (NCBRS) is an epigenetic disease with various physical manifestations. It is caused by mutations in the SMARCA2 gene, a core component in epigenetic regulation [2]. especially important for methylation analysis =
 
 An automated workflow/pipeline such as this one is necessary for the development of the field. Given the prevalence of bioinformatics packages across various languages, there are a plethora of different ways that raw methylation data could be analyzed. However, many individuals may not be well-versed or trained in bioinformatics, highlighting a need for an easily accessible, reproducible pipeline such as this. Moreover, reproducibility is a huge issue in scientific research, leading to many false and inflated results being published [1]. Thus, new pipelines such as this one must be created to ensure reproducibility and accessibility within the bioinformatics community, promoting best-practice for future research and fostering collaboration between members across scientific disciplines.
 
@@ -64,3 +64,5 @@ d. *Generate plot* - using the `ggplot2` package to generate a plot of the top 1
 ## References
 ---
 [1] Ioannidis, J. P. A. (2022). Correction: Why Most Published Research Findings Are False. PLoS Med, 19(8), e1004085. https://doi.org/10.1371/journal.pmed.1004085
+[2] Van Houdt, J. K., Nowakowska, B. A., Sousa, S. B., van Schaik, B. D., Seuntjens, E., Avonce, N., Sifrim, A., Abdul-Rahman, O. A., van den Boogaard, M. J., Bottani, A., Castori, M., Cormier-Daire, V., Deardorff, M. A., Filges, I., Fryer, A., Fryns, J. P., Gana, S., Garavelli, L., Gillessen-Kaesbach, G.,…Vermeesch, J. R. (2012). Heterozygous missense mutations in SMARCA2 cause Nicolaides-Baraitser syndrome. Nat Genet, 44(4), 445–449, S441. https://doi.org/10.1038/ng.1105 
+
