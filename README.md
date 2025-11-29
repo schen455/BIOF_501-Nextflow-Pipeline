@@ -66,22 +66,22 @@ nextflow run methylationMain.nf
 ## Workflow Summary
 ---
 1. **Preprocessing** using `minfi`\
-a. *Filtering reads* - removing any poor quality reads (p < 0.05) \
-b. *Normalization* - using quantile normalization \
-c. *Failed probe removal* - some probes may have failed during sequencing, detect and remove these probes \
-d. *SNP probe removals* - remove any probes with single nucleotide polymorphisms (SNPs) at the respective CpG site \
-e. *Generate beta values* - generate methylation beta-values, which quantify the degree of hyper-methylation (>0) or hypo-methylation (<0) \
+a. *Filtering reads* - removing any reads with poor quality signal intensities (p < 0.05) \
+b. *Normalization* - using quantile normalization to correct for technical variation across samples\
+c. *Failed probe removal* - some probes may have failed during sequencing, detect and remove these probes using `minfi` to avoid introducing artifacts in downstream analyses\
+d. *SNP probe removals* - remove any probes with single nucleotide polymorphisms (SNPs) at CpG sites \
+e. *Generate beta values* - generate methylation beta-values (from 0 to 1), which quantify the degree of methylation (hypermethylation ~1, hypomethylation ~0) \
 
 2. **Generate DMPs** \
-a. *Create a design matrix* - design matrix created to compare between NCBRS and control, as well as covariates (e.g. age, sex) \
-b. *Fit a linear model* - fit a linear model using the `limma` package \
-c. *Generate DMPs* - use the model to generate a list of differentially methylated probes (DMPs) \
+a. *Create a design matrix* - design matrix created to model NCBRS vs. control, adjusting for covariates (e.g. age, sex) \
+b. *Fit a linear model* - fit a linear model using the `limma` package, leveraging Empirical Bayes moderation to improve variance estimats\
+c. *Generate DMPs* - use the model to generate a list of differentially methylated probes (DMPs) based on effect size and p-values, DMPs represent CpG sites where methylation levels differ significantly between NCBRS and control samples \
 
 3. **GO analysis** \
-a. *CpG annotation* - annotate the CpGs using the EPIC array annotation package\
-b. *Filter significant DMPs* - filter for the most significant DMPs associated with NCBRS \
-c. *GO enrichment analysis* - using the `missMethyl` package to perform GO enrichment \
-d. *Generate plot* - using the `ggplot2` package to generate a plot of the top 10 GO terms associated with NCBRS in this data \
+a. *CpG annotation* - annotate the significant CpGs using the EPIC array annotation package\
+b. *Filter significant DMPs* - filter for the most significant DMPs, identified using a threshold of false-detection rate (FDR) < 0.05 \
+c. *GO enrichment analysis* - using the `missMethyl` package to perform GO enrichment to identify enriched GO terms among the significant DMPs\
+d. *Generate plot* - using the `ggplot2` package to generate a plot of the top 10 GO terms associated with NCBRS-specific methylation changes in this data \
 
 ![Workflow Illustration](images/BIOF501Nextflow-2.svg)
 
