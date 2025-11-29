@@ -4,7 +4,7 @@ params.outdir       = "$projectDir/results"
 
 //Create channels
 sample_sheet_ch = Channel.fromPath("chater_diehl_sample_sheet.csv")
-data_dir_ch     = Channel.fromPath("$projectDir/GSE125367_RAW")  
+data_dir_ch     = Channel.fromPath("$projectDir/input")  
 
 //Process 1: Pre-process the raw methylation data
 process preprocessMeth {
