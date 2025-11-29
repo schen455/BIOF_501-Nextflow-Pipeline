@@ -21,7 +21,7 @@ c. *Failed probe removal* - some probes may have failed during sequencing, detec
 d. *SNP probe removals* - remove any probes with single nucleotide polymorphisms (SNPs) at the respective CpG site \
 e. *Generate beta values* - generate methylation beta-values, which quantify the degree of hyper-methylation (>0) or hypo-methylation (<0) \
 
-![Workflow Illustration](images/Untitled Diagram.drawio.png)
+![Workflow Illustration](BIOF501NextflowSummary.png)
 
 
 ## References
