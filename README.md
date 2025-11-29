@@ -4,7 +4,7 @@
 ## Repository Contents
 --- 
 **Directories**
-- `raw_data`: contains all the raw `idat` files and the sample sheet used as input for the workflow \
+- `input`: contains all the raw `idat` files and the sample sheet used as input for the workflow \
 - `images`: contains the `.svg` file of the workflow summary image in this README.md file \
 - `bins`: contains all the `.R` scripts that run the analysis \
 - `results`: this results will be created by the workflow as the Nextflow pipeline runs, updating after each process step \
