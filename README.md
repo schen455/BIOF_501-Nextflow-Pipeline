@@ -57,7 +57,11 @@ d. *Generate plot* - using the `ggplot2` package to generate a plot of the top 1
 
 ## Expected Output
 ---
-### Top 10 GO terms output
+
+### Top 10 GO terms expected .csv file output 
+![Here is the .csv output](images/Top10goterms.png)
+
+### Top 10 GO terms plot output
 ![Here is the expected pdf output](images/GOplot.png)
 
 
