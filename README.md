@@ -91,13 +91,25 @@ d. *Generate plot* - using the `ggplot2` package to generate a plot of the top 1
 ### Results 
 ![This is what your results directory should look like at the end](images/results.png)
 - **bVals.rds** contains the methylation beta-values used for DMP analysis
-- **targets** contains
+- **targets.csv** contains metadata for each corresponding sample
+- **DMPs_results.csv** contains a .csv file with all the DMPs and the associated p-values and FDR-values
+- **goTerms.csv** contains a list of all the enriched GO terms for a list of the most significant DMPs
+- **topGOterms.pdf** is a .pdf file of a plot showing the top 10 enriched GO terms in the dataset
 
 ### Top 10 GO terms expected .csv file output 
 ![Here is the .csv output](images/Top10goterms.png)
+This is is the list of the top 10 enriched GO terms. 
+- **GO ID** contains the unique GO identifiers
+- **ONTOLOGY** contains the category the term belongs to: Biological Process (BP), Cellular Component (CC), or Molecular Function (MF)
+- **TERM** contains the descriptive terms of the GO category enriched in our list ofDMPs
+- **N** is the total number of genes annotated to this GO term from the entire EPIC array background (all the genes represented by CpGs in the array)
+- **DE** is the total number of differentially methylated genes in our significant DMPs that fall under this GO term
+- **P.DE** is the raw p-value from the ``missMethyl`` enrichment analysis, a lower value represents stronger enrichment
+- **FDR** is the False Discovery Rate-adjusted p-value, using a Benjamini-Hochberg correction, which accounts for multiple testing across all the GO terms, lower FDR values represent stronger enrichment
 
 ### Top 10 GO terms plot output
 ![Here is the expected pdf output](images/GOplot.png)
+This is the plot output detailing the top 10 most enriched GO terms in our list of DMPs. On the x-axis, we see the log-transformed p-values, with the highest value being the most enriched. The y-axis contains the names of the GO terms, with the size of each cirle representing the total number of genes enriched to that term.
 
 
 ## References
