@@ -35,8 +35,32 @@ An automated workflow/pipeline such as this one is necessary for the development
 - Docker (version 27.3.1 or higher) - [Click here to install](https://docs.docker.com/desktop/?_gl=1*1m4ai7c*_gcl_au*MTU4MTE4OTI5MS4xNzY0NDEyMjg1*_ga*MTcwMTkxNTU0NC4xNzY0MzI2Njk2*_ga_XJWPQMJYHQ*czE3NjQ0MTIyODUkbzIkZzEkdDE3NjQ0MTIzMDAkajQ1JGwwJGgw)
 --- 
 ### Running the Workflow
+1. Clone the repository
+```bash
+git clone https://github.com/anika-n-01/BIOF501_Project.git
+```
+2. Pull the raw methylation data from the NCBI GEO database (into the `/inputs` folder)
+```bash
+cd BIOF_501-Nextflow-Pipeline/inputs
+```
+```bash
+curl -O https://ftp.ncbi.nlm.nih.gov/geo/series/GSE125nnn/GSE125367/suppl/GSE125367_RAW.tar
+```
+or 
+```bash
+wget https://ftp.ncbi.nlm.nih.gov/geo/series/GSE125nnn/GSE125367/suppl/GSE125367_RAW.tar
+```
 
+3. Untar and unzip the data
+```bash
+tar -xvf GSE125367_RAW.tar
+gunzip *.gz
+```
 
+4. Run the nextflow pipeline from the `BIOF_501-Nextflow-Pipeline` directory
+```bash
+nextflow run methylationMain.nf
+```
 
 ## Workflow Summary
 ---
