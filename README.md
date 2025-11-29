@@ -55,6 +55,11 @@ d. *Generate plot* - using the `ggplot2` package to generate a plot of the top 1
 - Nextflow (version 24.10.1 or higher) - [Click here to install](https://www.nextflow.io/docs/latest/install.html)
 - Docker (version 27.3.1 or higher) - [Click here to install](https://docs.docker.com/desktop/?_gl=1*1m4ai7c*_gcl_au*MTU4MTE4OTI5MS4xNzY0NDEyMjg1*_ga*MTcwMTkxNTU0NC4xNzY0MzI2Njk2*_ga_XJWPQMJYHQ*czE3NjQ0MTIyODUkbzIkZzEkdDE3NjQ0MTIzMDAkajQ1JGwwJGgw)
 
+## Expected Output
+---
+### Top 10 GO terms output
+![Here is the expected pdf output](images/GOplot.png)
+
 
 ## References
 ---
