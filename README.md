@@ -37,7 +37,7 @@ An automated workflow/pipeline such as this one is necessary for the development
 ### Running the Workflow
 1. Clone the repository
 ```bash
-git clone https://github.com/anika-n-01/BIOF501_Project.git
+git clone https://github.com/schen455/BIOF_501-Nextflow-Pipeline.git
 ```
 2. Pull the raw methylation data from the NCBI GEO database (into the `/inputs` folder)
 ```bash
