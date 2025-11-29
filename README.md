@@ -34,7 +34,7 @@ b. *Filter significant DMPs* - filter for the most significant DMPs associated w
 c. *GO enrichment analysis* - using the ('missMethyl') package to perform GO enrichment \
 d. *Generate plot* - using the ('ggplot2') package to generate a plot of the top 10 GO terms associated with NCBRS in this data \
 
-![Workflow Illustration](BIOF501Nextflow.svg)
+![Workflow Illustration](images/BIOF501Nextflow-2.svg)
 
 
 ## References
