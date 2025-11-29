@@ -27,6 +27,16 @@ Nicolaides-Baraister syndrome (NCBRS) is an epigenetic disease with various phys
 
 An automated workflow/pipeline such as this one is necessary for the development of the field. Given the prevalence of bioinformatics packages across various languages, there are a plethora of different ways that raw methylation data could be analyzed. However, many individuals may not be well-versed or trained in bioinformatics, highlighting a need for an easily accessible, reproducible pipeline such as this. Moreover, reproducibility is a huge issue in scientific research, leading to many false and inflated results being published [1]. Thus, new pipelines such as this one must be created to ensure reproducibility and accessibility within the bioinformatics community, promoting best-practice for future research and fostering collaboration between members across scientific disciplines.
 
+## Usage
+--- 
+### Dependencies
+--- 
+- Nextflow (version 24.10.1 or higher) - [Click here to install](https://www.nextflow.io/docs/latest/install.html)
+- Docker (version 27.3.1 or higher) - [Click here to install](https://docs.docker.com/desktop/?_gl=1*1m4ai7c*_gcl_au*MTU4MTE4OTI5MS4xNzY0NDEyMjg1*_ga*MTcwMTkxNTU0NC4xNzY0MzI2Njk2*_ga_XJWPQMJYHQ*czE3NjQ0MTIyODUkbzIkZzEkdDE3NjQ0MTIzMDAkajQ1JGwwJGgw)
+--- 
+### Running the Workflow
+
+
 
 ## Workflow Summary
 ---
@@ -50,10 +60,6 @@ d. *Generate plot* - using the `ggplot2` package to generate a plot of the top 1
 
 ![Workflow Illustration](images/BIOF501Nextflow-2.svg)
 
-## Dependencies
---- 
-- Nextflow (version 24.10.1 or higher) - [Click here to install](https://www.nextflow.io/docs/latest/install.html)
-- Docker (version 27.3.1 or higher) - [Click here to install](https://docs.docker.com/desktop/?_gl=1*1m4ai7c*_gcl_au*MTU4MTE4OTI5MS4xNzY0NDEyMjg1*_ga*MTcwMTkxNTU0NC4xNzY0MzI2Njk2*_ga_XJWPQMJYHQ*czE3NjQ0MTIyODUkbzIkZzEkdDE3NjQ0MTIzMDAkajQ1JGwwJGgw)
 
 ## Expected Output
 ---
