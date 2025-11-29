@@ -1,9 +1,13 @@
 # BIOF_501-Nextflow-Pipeline
-Nextflow pipeline to analyze ASV count data from microbial samples. This is for the term project for the BIOF_501 course.
+## **By Steven Chen**
+--- 
+## Pipeline Overview
+--- 
+This pipeline takes raw methylation .IDAT files from Illumina EPIC/EPICv2 array data using a comprehensive Nextflow workflow. Preprocessing, differential methylation probe (DMP) identification, and gene ontology (GO) enrichment analysis steps are performed using R packages to create an end-to-end analysis pipeline. 
 
 
 
-# Workflow Summary
+## Workflow Summary
 ---
 1. **Preprocessing** \
 a. *Filtering reads* - removing any poor quality reads (p < 0.05) \
