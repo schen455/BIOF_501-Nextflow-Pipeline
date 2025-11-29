@@ -88,6 +88,10 @@ d. *Generate plot* - using the `ggplot2` package to generate a plot of the top 1
 
 ## Expected Output
 ---
+### Results 
+![This is what your results directory should look like at the end](images/results.png)
+- **bVals.rds** contains the methylation beta-values used for DMP analysis
+- **targets** contains
 
 ### Top 10 GO terms expected .csv file output 
 ![Here is the .csv output](images/Top10goterms.png)
