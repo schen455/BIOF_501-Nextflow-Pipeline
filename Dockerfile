@@ -12,4 +12,4 @@ RUN R -e "BiocManager::install(c( \
     'GO.db' \
 ))"
 
-RUN R -e "install.packages(c('tidyverse','data.table','ggplot2','stringr','optparse'))"
+RUN R -e "install.packages(c('tidyverse','data.table','ggplot2','stringr','optparse', 'QCEWAS'))"
