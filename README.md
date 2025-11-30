@@ -14,6 +14,7 @@
 - `methylationMain.nf`: this is the Nextflow file that contains all the processes and the workflow call itself \
 - `nextflow.config`: this is the configuration file that sets some parameters for Nextflow, such as specifying the Docker container \
 - `README.md`: this is the markdown file that provides usage and summary information regarding this repository \
+- `Dockerfile`: this file is the container that has all the necessary dependencies for this pipeline\
 
 ## Pipeline Overview
 --- 
