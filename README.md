@@ -58,8 +58,12 @@ wget https://ftp.ncbi.nlm.nih.gov/geo/series/GSE125nnn/GSE125367/suppl/GSE125367
 tar -xvf GSE125367_RAW.tar
 gunzip *.gz
 ```
+4. Create the Docker image for Nextflow to run
+```bash
+docker build -t methylcontainer:latest
+```
 
-4. Run the nextflow pipeline from the `BIOF_501-Nextflow-Pipeline` directory
+6. Run the nextflow pipeline from the `BIOF_501-Nextflow-Pipeline` directory
 ```bash
 nextflow run methylationMain.nf
 ```
